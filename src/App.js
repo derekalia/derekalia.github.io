@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Home from "./components/Home";
+import Resume from "./components/Resume";
+import { Router } from "@reach/router";
+import styled from "styled-components";
 function App() {
+  document.title = "Derek Alia";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper>
+      <Router>
+        <Home path="/" />
+        <Resume path="/resume" />
+      </Router>
+    </AppWrapper>
   );
 }
 
 export default App;
+
+const AppWrapper = styled.div`
+  font-family: "Roboto", sans-serif;
+`;
