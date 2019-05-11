@@ -1,1 +1,0 @@
-# derekalia.github.io
