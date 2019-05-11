@@ -80,6 +80,7 @@ const ResumeHolder = styled.div`
 
 const SocialImg = styled.img`
   width: 40px;
+  cursor: pointer;
 `;
 
 const LinkHolder = styled.div`
